@@ -1,0 +1,11 @@
+Export the jar from here:
+https://github.com/uriel-frankel/android-code-coverage/raw/master/hellojacoco/android-jacoco-the-missing.jar
+
+Execute the jar using the following command:
+
+java -jar android-jacoco-the-missing.jar -f /path/to/coverage.ec -p ./<project-package-name>
+
+Make sure to create a folder with <project-package-name> and keep all code coverage files inside this folder. The project directory (<project-package-name>) should contain the 
+non-instrumented class files inside <project-package-name>/app/build/intermediates/classes
+
+This will generate a folder named coveragereport/ one level above project's folder.
